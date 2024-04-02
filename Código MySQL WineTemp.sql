@@ -1,3 +1,6 @@
+-- Criado Por Rebeca Roque RA:03241032
+-- Criado Por Luiz Gustavo Dantas RA:03241060
+
 -- Cria o banco de dados WineTemp
 create database WineTemp;
 
