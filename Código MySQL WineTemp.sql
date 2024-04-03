@@ -67,10 +67,10 @@ create table temperatura_umidade(
 );
 
 -- Cria a tabela 'alarmes' para armazenar informações sobre alarmes relacionados a temperaturas e umidades
-create table alermes(
-    idAlarmes int primary key auto_increment, -- Chave primária auto incrementada para identificar cada alarme
-    tipo_alarme varchar(45), -- Tipo de alarme
-    data_hora datetime, -- Data e hora em que o alarme foi registrado
-    fkalarme int, -- Chave estrangeira referenciando o barril de vinho associado ao alarme
-    constraint AlarmeEmpresa foreign key (fkAlarme) references empresa (idEmpresa) -- Restrição de chave estrangeira referenciando a tabela 'empresa'
-);
+-- create table alermes(
+--   idAlarmes int primary key auto_increment, -- Chave primária auto incrementada para identificar cada alarme
+--    tipo_alarme varchar(45), -- Tipo de alarme
+--    data_hora datetime, -- Data e hora em que o alarme foi registrado
+--    fkalarme int, -- Chave estrangeira referenciando o barril de vinho associado ao alarme
+--    constraint AlarmeEmpresa foreign key (fkAlarme) references empresa (idEmpresa) -- Restrição de chave estrangeira referenciando a tabela 'empresa'
+--);
