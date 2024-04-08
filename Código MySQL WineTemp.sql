@@ -14,7 +14,8 @@ create table usuario(
     email varchar(45), -- Endereço de e-mail do usuário
     senha varchar(15), -- Senha do usuário
     fkempesa int -- Chave estrangeira referenciando a empresa a que o usuário pertence
-);
+    constraint UsuarioEmpresa foreign key (fkempresa) references empresa (idEmpresa)
+    );
 
 -- Descreve a estrutura da tabela 'usuario'
 desc usuario;
@@ -57,7 +58,7 @@ create table configuracoes(
 );
 
 -- Cria a tabela 'temperatura_umidade' para armazenar as leituras de temperatura e umidade
-create table temperatura_umidade(
+create table sensor_temp_umidade(
     idTemperatura_umidade int primary key auto_increment, -- Chave primária auto incrementada para identificar cada leitura
     data_hora datetime, -- Data e hora da leitura
     temperatura decimal (4,2), -- Valor da temperatura
